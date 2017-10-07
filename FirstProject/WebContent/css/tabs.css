@@ -1,0 +1,217 @@
+h3 {
+	display: inline-block;
+    float: left;
+}
+
+/*----------------------------------------LISTS----------------------------------------*/
+ul {
+	background: #f5f3f3;
+	padding: 20px;
+}
+
+ul li:hover {
+	background: #ff8000;
+}
+/*----------------------------------------TABLE----------------------------------------*/
+table {
+	width: 100%;
+}
+th {
+	height: 50px;
+	color: white;
+	background-color: #5c5c5c;
+}
+th, td {
+	border-bottom: 1px solid #ddd;
+}
+tr:nth-of-type(even) {
+	background: #f2f2f2;
+	display: table-row;
+}
+
+tr:hover {
+	background: #ff8000;
+}
+
+.trash:hover{
+	color: red;
+	font: bold consolas, sans-serif, Arial;
+	cursor: pointer;
+	background: #ffffff;
+}
+
+.trash {
+    position: relative;
+    display: inline-block;
+/*     border-bottom: 1px dotted black; */
+}
+
+.trash .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: red;
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+    border-color: black;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.trash .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.trash:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+.inserted {
+/* 	border: red; */
+}
+
+
+
+/*----------------------------------------BUTTONS tab----------------------------------------*/
+div.tabs {
+	font: 15px consolas, sans-serif, Arial;
+	overflow: hidden;
+	border: 1px solid #ccc;
+	background-color: #f1f1f1;
+}
+/*----------------------------------------BUTTONS----------------------------------------*/
+div.tabs button {
+	font: 15px consolas, sans-serif, Arial;
+	background-color: #f1f1f1;
+	float: left;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 14px 16px;
+	transition: 0.3s;
+}
+div.tabs button:hover {
+	background-color: #ff8000;
+}
+/*--------cell-------*/
+
+table .approvable {
+   background-color: #377ca2;
+} 
+
+/*----------------------------------------CONTENT----------------------------------------*/
+.tabcontent {
+	display: none;
+	padding: 6px 12px;
+	border: 1px solid #ccc;
+	border-top: none;
+	font: 15px consolas, sans-serif, Arial;
+}
+p.dbResponse {
+	position: relative;
+	color: #ff8000;
+	font-family: 15px consolas, sans-serif, Arial;
+	font-weight:bold;
+}
+/*--------header-------*/
+.header{
+	background-image: url(gtk_sort_none.png);
+	background-size: 20px 25px;
+	background-repeat: no-repeat;
+	background-position: 98% 50%;
+	cursor: pointer;
+}
+.headerSortUp{
+	background-image: url(gtk_sort_ascending.png);
+ 	background-color: #8dbdd8;
+}
+.headerSortDown {
+	background-image: url(gtk_sort_descending.png);
+ 	background-color: #8dbdd8;
+}
+
+/*-----------SUB-TABS--------------------------*/
+div.sub-tabs {
+	font: 15px consolas, sans-serif, Arial;
+	overflow: hidden;
+	border: 1px solid #ccc;
+	background-color: #f1f1f1;
+}
+div.sub-tabs button {
+	font: 12px consolas, sans-serif, Arial;
+	background-color: #f1f1f1;
+	float: left;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 5px 12px;
+	transition: 0.3s;
+}
+div.sub-tabs button:hover {
+	background-color: #ff8000;
+}
+/*----------------------------------------BUTTONS----------------------------------------*/
+
+.button {
+	background-color:#ff8000;
+	display: inline-block;
+    float: left;
+	border:1px solid #ccc;
+	position: relative;
+	cursor:pointer;
+	color:white;
+	font-family: 15px consolas, sans-serif, Arial;
+	font-weight:bold;
+}
+
+.button:hover{
+	background-color: white;
+	border: 1px solid #8dbdd8;
+	color: #ff8000;
+}
+
+.button:active{
+	background-color: #ccc;
+	border: 1px solid #ff8000;
+	color: white;
+	position:relative;
+	top:1px;
+}
+
+
+#submit {
+    margin-top: 18px;
+    margin-left: 50px;
+}
+
+.button-add {
+    margin-top: 18px;
+    margin-left: 20px;
+}
+#exp-xls {
+    margin-top: 18px;
+	margin-right: 20px;
+	float: right;
+	
+}
+#exp-pdf{
+    margin-top: 18px;
+	margin-right: 5px;
+	float: right;
+}
+
+
