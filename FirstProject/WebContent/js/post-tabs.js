@@ -83,7 +83,7 @@ function fillShipBattlesArray(){
 		});
 	});
 }
-
+///
 //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!--SHIPS--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!//
 $(document).on('click', '.tabs button:eq(0)', function() {
 	tabContentContext = 'ship_Id'
